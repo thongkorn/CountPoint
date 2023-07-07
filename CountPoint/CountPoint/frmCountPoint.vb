@@ -28,7 +28,7 @@ Public Class frmCountPoint
         '// Specified Path.
         Dim ImagePath As String = MyPath(Application.StartupPath) & "Images\"
         '//
-        Select Case Val(Label1.Text) Mod 5
+        Select Case Num Mod 5
             Case 0  '// 5, 10, 15, 20 ... Mod 5 = 0
                 PictureBox1.Image = Image.FromFile(ImagePath & "5.jpg")
             Case 1
